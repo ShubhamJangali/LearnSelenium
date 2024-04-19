@@ -27,5 +27,39 @@ public class Seperate_Strings_into_various_format {
         System.out.println("Numbers :"+Numbers);
         System.out.println("Lowercase :"+Uppercase);
         System.out.println("UpperCase :"+Lowercase);
+
+
+        //OR
+
+//        String str = "sdZX23%$sH5&L8sdfGJF$$545";
+//        String digit="";
+//        String uppercase="";
+//        String lowercase="";
+//        String spaces ="";
+//        String sp_characters="";
+//        char[] ch = str.toCharArray();
+//        for (int i=0;i<ch.length;i++){
+//            if (Character.isDigit(ch[i])){
+//                digit = digit+ch[i];
+//            }
+//            else if (Character.isUpperCase(ch[i])){
+//                uppercase = uppercase + ch[i];
+//            }
+//            else if (Character.isLowerCase(ch[i])){
+//                lowercase = lowercase + ch[i];
+//            }
+//            else if (ch[i]==' '){
+//                spaces = spaces + ch[i];
+//            }
+//            else {
+//                sp_characters = sp_characters +ch[i];
+//            }
+//        }
+//
+//        System.out.println(digit);
+//        System.out.println(uppercase);
+//        System.out.println(lowercase);
+//        System.out.println(sp_characters);
+//        System.out.println(spaces);
     }
 }

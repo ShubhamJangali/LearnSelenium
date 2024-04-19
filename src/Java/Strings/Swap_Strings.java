@@ -4,16 +4,16 @@ import java.sql.SQLOutput;
 
 public class Swap_Strings {
     public static void main(String[] args) {
-        String A = "Shubham";
-        String B = "Mukund";
+        String A = "Shubham";  //A.length() = 7
+        String B = "Mukund";   //B.length() = 6
 
         System.out.println("=======================================");
 
-        A = A+B;
+        A = A+B;                                                        // ShubhamMukund  A.length = 13
         System.out.println(A);
-        B = A.substring(0,(A.length()-B.length()));
+        B = A.substring(0,(A.length()-B.length()));                     // A.substring(0,-(13-6)) = Shubham
         System.out.println(B);
-        A = A.substring(B.length());
+        A = A.substring(B.length());                                    // A.substring(7) = Mukund
         System.out.println(A);
 
         System.out.println("=========================================");

@@ -1,20 +1,32 @@
 package Java.Strings;
 
-import java.util.Scanner;
+import Java.Collection.Hashset;
+
+import javax.sound.midi.Soundbank;
+import java.util.*;
 
 public class PracticeHere {
     public static void main(String[] args) {
-       String s1 = "ABC";
-       String s2 = "ABC";
-       String s3 = new String("ABC");
-       String s4 = new String("ABC");
-       int n1 = 1;
-       int n2 = 1;
-       if (s3==s4){
-           System.out.println("True");
-       }
-       else {
-           System.out.println("False");
-       }
+        String str = "My name is shubham jangali";
+        char[] ch = str.toLowerCase().toCharArray();
+        int vovels = 0;
+        int consonents = 0;
+        int spaces = 0;
+
+        for(int i=0;i<ch.length;i++){
+            if (ch[i]=='a' || ch[i]=='e' || ch[i]=='i' || ch[i]=='o' || ch[i]=='u'){
+                vovels++;
+            }
+            else if (ch[i]==' '){
+                spaces++;
+            }
+            else {
+                consonents++;
+            }
+        }
+
+        System.out.println("vovels count is "+vovels);
+        System.out.println("consonents count is "+consonents);
+        System.out.println("spaces count are "+spaces);
     }
 }
