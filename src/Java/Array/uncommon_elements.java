@@ -1,21 +1,21 @@
 package Java.Array;
 
-import java.lang.reflect.Array;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
-public class Practice_Here {
+public class uncommon_elements {
     public static void main(String[] args) {
         int[] A = {5,10,15,20};
         int[] B = {10,15,20,25};
         int[] C = {15,25,30,35};
 
-       Set<Integer> setA = new HashSet<>();
-       Set<Integer> setB = new HashSet<>();
-       Set<Integer> setC = new HashSet<>();
+        Set<Integer> setA = new HashSet<>();
+        Set<Integer> setB = new HashSet<>();
+        Set<Integer> setC = new HashSet<>();
 
-       for (Integer num:A){
-           setA.add(num);
-       }
+        for (Integer num:A){
+            setA.add(num);
+        }
 
         for (Integer num:B){
             setB.add(num);
