@@ -5,36 +5,26 @@ import java.util.*;
 
 public class Practice_Here {
     public static void main(String[] args) {
-        int[] A = {5,10,15,20};
-        int[] B = {10,15,20,25};
-        int[] C = {15,25,30,35};
-
-       Set<Integer> setA = new HashSet<>();
-       Set<Integer> setB = new HashSet<>();
-       Set<Integer> setC = new HashSet<>();
-
-       for (Integer num:A){
-           setA.add(num);
-       }
-
-        for (Integer num:B){
-            setB.add(num);
+        String str = "hello shubham how are you, are you fine";
+        str = str.replace(",","");
+        String[] arr = str.split(" ");
+        Arrays.sort(arr);
+        String currentword = arr[0];
+        int count=1;
+        for (int i=1;i<arr.length;i++){
+            if (currentword.equals(arr[i])){
+                count++;
+            }
+            else {
+                if (count>1){
+                    System.out.println(currentword+":"+count);
+                }
+                currentword=arr[i];
+                count=1;
+            }
         }
-
-        for (Integer num:C){
-            setC.add(num);
+        if (count>1){
+            System.out.println(currentword+":"+count);
         }
-
-        Set<Integer> commonelements = new HashSet<>(setA);
-        commonelements.retainAll(setB);
-        commonelements.retainAll(setC);
-
-        Set<Integer> allelements = new HashSet<>(setA);
-        allelements.addAll(setB);
-        allelements.addAll(setC);
-
-        allelements.removeAll(commonelements);
-
-        System.out.println(allelements);
     }
 }
