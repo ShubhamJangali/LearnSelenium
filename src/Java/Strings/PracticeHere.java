@@ -13,7 +13,20 @@ public class PracticeHere {
         String letters="";
         String symbols="";
         for (int i=0;i<str.length();i++){
-            if (Character.isDigit(str.charAt(i)));
+            if (Character.isDigit(str.charAt(i))){
+                number = number+str.charAt(i);
+            }
+            else if (Character.isLetter(str.charAt(i))){
+                letters = letters + str.charAt(i);
+            }
+            else{
+                symbols = symbols + str.charAt(i);
+            }
         }
+
+        System.out.println(number);
+        System.out.println(letters);
+        System.out.println(symbols);
+
     }
 }
